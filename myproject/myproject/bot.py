@@ -11,9 +11,8 @@ django.setup()
 
 from telebot import TeleBot
 from webapp.models import Telegram
-Token="7964932597:AAEBij_ZhaV-tIcRsjfJ5Xj0CGPei_7Zstw"
 
-
+Token=os.getenv("Token")
 bot=TeleBot(Token)
 current_time=time.ctime().split(' ')[3]
 print(current_time)
