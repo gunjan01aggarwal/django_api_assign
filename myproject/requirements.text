@@ -3,3 +3,4 @@ pip install python-decouple
 pip install djangorestframework-simplejwt
 pip install celery redis
 pip install pyTelegramBotAPI
+pip install python-dotenv

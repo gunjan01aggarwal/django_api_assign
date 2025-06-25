@@ -3,6 +3,8 @@ import os
 import django
 import sys
 import time
+from dotenv import load_dotenv
+
 
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -11,6 +13,8 @@ django.setup()
 
 from telebot import TeleBot
 from webapp.models import Telegram
+
+load_dotenv()
 
 Token=os.getenv("Token")
 bot=TeleBot(Token)
