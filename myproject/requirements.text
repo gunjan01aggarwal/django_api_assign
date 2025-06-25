@@ -1,3 +1,5 @@
 pip install djangorestframework
 pip install python-decouple
 pip install djangorestframework-simplejwt
+pip install celery redis
+pip install pyTelegramBotAPI
